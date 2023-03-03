@@ -8,7 +8,7 @@ InstruPy is a python package to calculate (satellite) observation data metrics f
 
 - `orbitpy`
 
-OrbitPy is a python package which contain set of modules to compute mission-data (orbits, coverage, contacts, eclipses, etc.) of satellites. 
+OrbitPy is a python package which contain set of modules to compute mission-data (orbits, coverage, contacts, etc.) of satellites. 
 
 - `eosim-gui`
 
@@ -22,10 +22,11 @@ The packages must be installed in the following order. The detailed instructions
 2. `orbitpy`
 3. `eosim-gui`
 
-The following sequence of linux commands has been used when installing in Ubuntu 22.04.1 LTS 64-bit with Miniconda3-py310_23.1.0-1-Linux-x86_64. Please see the parent repositories for detailed instructions.
+The following sequence of linux commands can be tried when installing in Ubuntu 22.04.1 LTS 64-bit with Miniconda3-py310_23.1.0-1-Linux-x86_64. Please see the parent repositories for detailed instructions.
 
 - Install miniconda.
-- Clone the instrupy, orbitpy and eosim-gui repos to the local drive.
+- Clone the 'instrupy', 'orbitpy' and 'eosim-gui' repos to the local drive.
+
 - Install InstruPy
 ```
 sudo apt update
@@ -75,6 +76,7 @@ make runtest
 - Install EOSim-GUI
 ```
 conda install -c conda-forge cartopy
+cd eosim-gui
 make
 ```
 - Test the installation by executing:
